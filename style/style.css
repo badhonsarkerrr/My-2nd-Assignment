@@ -123,7 +123,7 @@ nav li a {
   font-weight: 700;
 }
 .font {
-  font: #000000;
+  color: #000000;
 }
 
 .paragraph {
@@ -246,6 +246,46 @@ nav li a {
   text-decoration: underline;
 }
 
+.news-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/images/news-letter-bg.png");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  flex-direction: column;
+}
+
+.submission-box {
+  display: flex;
+  width: 70%;
+}
+.news-section h2 {
+  color: white;
+}
+.news-section button {
+  background-color: #e95a08;
+  padding: 26px 50px 26px 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
+
+.submission-box input[type="email"] {
+  width: 100%;
+  padding: 8px 20px;
+}
+
+.submission-box input[type="email"]::placeholder {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 576px) {
   .flower-container {
     flex-direction: column;
@@ -283,5 +323,11 @@ nav li a {
   .zabo {
     grid-column: auto;
     grid-row: auto;
+  }
+  .submission-box button {
+    padding: 8px 20px;
+  }
+  .news-section h2 {
+    font-size: 20px;
   }
 }
