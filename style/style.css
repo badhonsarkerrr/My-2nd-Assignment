@@ -1,5 +1,5 @@
 .secondary-bg {
-  back;
+  background-color: #f0f0f0;
 }
 
 header {
@@ -11,8 +11,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: 50px 200px;
-  
-
 }
 nav ul {
   display: flex;
@@ -29,9 +27,8 @@ nav li a {
   font-size: 20px;
 }
 
-.dark-2{
-  color: #8987A1;
-
+.dark-2 {
+  color: #8987a1;
 }
 
 .normal {
@@ -43,10 +40,8 @@ nav li a {
   align-items: center;
   justify-content: space-between;
   padding: 40px 0;
-  /* top: 221px;
-  left: 150px; */
-  margin: 221px 150px; 
 
+  margin: 221px 150px;
 }
 
 .banner-left {
@@ -82,30 +77,24 @@ nav li a {
   text-align: center;
 }
 
-
- /* Make plant price bold */
 .plant-price {
   font-weight: bold;
 }
 
-/* Set button color */
 .btn-primary {
-  background-color: #e95a08; /* Change to your desired color */
-  color: #fff;               /* Button text color */
+  background-color: #e95a08;
+  color: #fff;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
 }
 
-
-.plants-section.container{
+.plants-section.container {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-
-
 
 .plant-card {
   display: flex;
@@ -113,9 +102,83 @@ nav li a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding : 20px;
+  padding: 20px;
   border: solid #ccc;
   border-radius: 8px;
   margin: 10px;
   background-color: #f9f9f9;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 700;
+}
+.font {
+  font: #000000;
+}
+
+.paragraph {
+  font-size: 22px;
+  color: #00000080;
+  line-height: 1.6;
+}
+
+.list-item {
+  margin-top: 20px;
+}
+.flower-container {
+  gap: 60px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.badge {
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  top: -100px;
+  right: -90px;
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+.image-container {
+  position: relative;
+}
+
+.section-gap {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .flower-container {
+    flex-direction: column;
+  }
+  .flower-store {
+    width: 100%;
+  }
+  .badge {
+    display: none;
+  }
+  .heading {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  br {
+    display: none;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+
+  .list-item {
+    margin-top: 16px;
+  }
 }
